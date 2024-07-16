@@ -1,0 +1,17 @@
+{ "generator_choice": "physicdummy",
+  "file_ext": "npy",
+  "batch_size": 1,
+  "number_of_examples": 1000,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": null,
+  "transform_type_target": "real",
+  "masked": false,
+  "complex_output": false,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": ""
+  },
+  "num_workers": 0
+}

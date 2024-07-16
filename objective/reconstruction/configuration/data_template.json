@@ -1,0 +1,28 @@
+{ "generator_choice": "Reconstruction",
+  "file_ext": "h5",
+  "batch_size": 1,
+  "number_of_examples": null,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": "complex",
+  "transform_resize": true,
+  "transform_type_target": "abs",
+  "complex_type": "cartesian",
+  "masked": false,
+  "transform": {"RandomAffine": {"scales": [0.25, 4],
+                 "degrees": [-10, 10, -10, 10, 0, 0],
+                 "translation": [-50, 50, -50, 50, 0, 0],
+                 "center": "image",
+                 "default_pad_value": 0,
+                 "isotropic": true}},
+  "switch_input_output": false,
+  "input_is_output": true,
+  "output_is_input": false,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": "",
+    "requires_grad": false
+  },
+  "num_workers": 0
+}

@@ -1,0 +1,15 @@
+{ "name": null,
+  "comment": "-purpose of this run-",
+  "packed_keys": [],
+  "dir": {"ddata":  null,
+          "doutput": null,
+          "dtemplate":  null},
+  "model": {"n_epoch": 200},
+  "optimizer": {"name": "Adam",
+                "config": {"lr": 0.001}},
+  "data": {"batch_perc": 0.1},
+  "gpu_frac": 0.2,
+  "callback": {"breakdown_limit": 15,
+               "memory_length": 10,
+               "memory_time":  20}
+}

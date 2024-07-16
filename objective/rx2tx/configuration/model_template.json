@@ -1,0 +1,194 @@
+{
+  "config_regular": {
+    "network_choice": "resnet",
+    "indicator_clipweights": false,
+    "clipweights_value": 0.75,
+    "init_type": "orthogonal",
+    "loss": "HelmholtzLoss",
+    "loss_config": {"run": {}, "obj": {}},
+    "loss_additional": "PerceptualLossStyleLoss",
+    "loss_additional_config": {"run": {"masked": true}, "obj": {}},
+    "lambda_loss_config": {"type": "Constant", "weight": 5, "epoch_on": 0},
+    "lambda_loss_additional_config": {"Type": "HeaviSide", "weight": 3, "epoch_on": 5},
+    "lambda_xcnn_config": {"type": "Constant", "weight": 1, "epoch_on": 0}
+  },
+  "config_gan": {
+    "conditional": true,
+    "MSG": false,
+    "discriminator_clipweights": true,
+    "generator_clipweights": false,
+    "discriminator_clipweights_value": 0.15,
+    "generator_clipweights_value": 0.1,
+    "n_discriminator_training": 4,
+    "generator_choice": "xnetzerodawn",
+    "generator_init_type": "normal",
+    "discriminator_choice": "pixel",
+    "discriminator_init_type": "normal",
+    "generator_loss": "SpacyLoss",
+    "generator_loss_config": {"n_degree": 8,
+                              "n_size": 256,
+                              "transform_type": "real",
+                              "coil_position": false,
+                              "mask": true},
+    "generator_additional_loss": "MSELoss",
+    "generator_additional_loss_config": {},
+    "discriminator_loss": "GANLoss",
+    "discriminator_loss_config": {
+                                    "gan_mode": "lsgan",
+                                    "smoothed_target": true
+                                  },
+    "lambda_generator": 2,
+    "lambda_generator_additional": 1,
+    "lambda_xcnn_generator": 0.1,
+    "lambda_xcnn_discriminator": 0.1,
+    "lr_generator": 0.0004,
+    "lr_discriminator": 0.0001
+  },
+  "config_resnetsplit": {
+    "input_nc": 2,
+    "output_nc": 2,
+    "n_blocks": 8,
+    "n_layer": 2,
+    "ngf": 64,
+    "drop_prob": 0.5,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "Conv2d",
+    "final_activation": "identity",
+    "block_name": "resblock",
+    "padding_type": "reflect",
+    "n_split": 8
+  },
+  "config_resnetmsg": {
+    "input_nc": 16,
+    "output_nc": 16,
+    "n_blocks": 4,
+    "n_layer": 6,
+    "ngf": 32,
+    "drop_prob": 0.5,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "Conv2d",
+    "final_activation": "identity",
+    "block_name": "resblock",
+    "padding_type": "reflect"
+  },
+  "config_nlayermsg": {
+    "input_nc": 16,
+    "n_layers": 4,
+    "ndf": 64,
+    "normalization_layer": "EvoNorm2D"
+  },
+  "config_unet": {
+    "n_channels": 8,
+    "n_classes": 1
+  },
+  "config_unetskip": {
+    "input_nc": 16,
+    "output_nc": 16,
+    "num_downs": 4,
+    "use_dropout": true,
+    "normalization_layer": ["EvoNorm2D", "Instancenorm2d"],
+    "block_name": "resnetblock",
+    "final_activation": "identity"
+  },
+  "config_xnetresnet": {
+    "down_block": "ConvBlock2D",
+    "down_block_normalization": "EvoNorm2D",
+    "up_block_normalization": "EvoNorm2D",
+    "up_block": "convblock2D"
+  },
+  "config_xnetzerodawn": {
+    "down_block_normalization": "EvoNorm2D",
+    "down_activation": "LearnTanh",
+    "feature_activation": "identity",
+    "up_block_normalization": "EvoNorm2D",
+    "up_activation": "LearnTanh",
+    "block_name": "resnetblock",
+    "conv_layer": "conv2d",
+    "drop_prob": 0.2,
+    "in_chan": 2,
+    "out_chan": 2,
+    "start_chan": 32,
+    "n_layer": 3,
+    "n_blocks": 8,
+    "n_split": 8,
+    "final_activation": "identity",
+    "n_rotation_layer": 16
+  },
+  "config_resnet": {
+    "input_nc": 16,
+    "output_nc": 16,
+    "n_blocks": 18,
+    "ngf": 16,
+    "drop_prob": 0.4,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "Conv2d",
+    "final_activation": "identity",
+    "block_name": "resblock",
+    "padding_type": "reflect"
+  },
+  "config_nlayer": {
+    "input_nc": 32,
+    "n_layers": 6,
+    "ndf": 64,
+    "normalization_layer": "EvoNorm2D"
+  },
+  "config_pixel": {
+    "input_nc": 32,
+    "normalization_layer": "EvoNorm2D"
+  },
+  "config_deeppixel": {
+    "in_chan": 32,
+    "start_chan": 32,
+    "conv_layer": "",
+    "conv_layer_config": {
+                            "kernel_size": 1,
+                            "stride": 1,
+                            "padding": 0
+                          },
+    "activation": "leakyrelu",
+    "activation_config": {
+                            "negative_slope": 0.2
+                          },
+    "normalization_layer": "EvoNorm2D"
+  },
+  "config_pixelsplit": {
+    "input_nc": 2,
+    "n_split": 8,
+    "normalization_layer": "EvoNorm2D"
+  },
+    "config_nlayersplit": {
+      "input_nc": 4,
+      "n_layers": 3,
+      "ndf": 64,
+      "n_split": 8,
+      "normalization_layer": "EvoNorm2D"
+  },
+"config_xnetshadow": {"n_pool_layers": 4,
+                "start_chan": 8,
+                "n_hidden": 32,
+                "out_chans": 1,
+                "output_activation": "identity",
+                "convblock_activation": "relu",
+                "feature_activation": "tanh",
+                "down_block": "convblock2D",
+                "up_block": "convblock2D",
+                "down_pool": "conv",
+                "down_groups": 1
+                },
+
+"config_xnet": {"n_pool_layers": 3,
+                "start_chan": 8,
+                "n_hidden": 32,
+                "out_chans": 1,
+                "output_activation": "identity",
+                "down_block": "convblock2D",
+                "down_block_activation": "relu",
+                "down_block_normalization": "Instancenorm2D",
+                "down_pool": "conv",
+                "down_groups": 1,
+                "feature_activation": "relu",
+                "up_block": "convblock2D",
+                "up_block_activation": "relu",
+                "up_block_normalization": "Instancenorm2D"
+    }
+}

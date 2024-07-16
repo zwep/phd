@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#
+ssbatch -s papers/segment7t3t/figures/display_metric_tables.py -model t501,502,511,513,514 -sd mm1a -fun median
+
+# This shows the values per model (the median and IQR)
+ssbatch -s papers/segment7t3t/figures/display_metric_tables.py -model t501,903,901,905,909 -sd mm1a -fun median
+ssbatch -s papers/segment7t3t/figures/display_metric_tables.py -model t502,904,902,906,910 -sd mm1b -fun median
+ssbatch -s papers/segment7t3t/figures/display_metric_tables.py -model t511,rsynth-model-31-03,611,613,614 -sd acdc -fun median
+
+# This shows the values per model and class (the median and IQR)
+ssbatch -s papers/segment7t3t/figures/display_metric_tables.py -model t501,903,901,905,909 -sd mm1a -fun class
+ssbatch -s papers/segment7t3t/figures/display_metric_tables.py -model t502,904,902,906,910 -sd mm1b -fun class
+ssbatch -s papers/segment7t3t/figures/display_metric_tables.py -model t511,rsynth-model-31-03,611,613,614 -sd acdc -fun class

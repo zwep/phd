@@ -1,0 +1,45 @@
+#!/bin/bash
+# Not OK, but maybe works..?
+source /home/bme001/20184098/.bashrc
+# MM1A creation code
+# 7T evaluation - the dependency is forced here to make the logger behave better
+job_id=$(ssbatch -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric d -model t501,901,903,905,909)
+job_id=$(ssbatch -j "$job_id" -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric hd -model t501,901,903,905,909 -ylim 130)
+# Kaggle evaluation
+job_id=$(ssbatch -j "$job_id" -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset kaggle -metric d -model t501,901,903,905,909)
+job_id=$(ssbatch -j "$job_id" -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset kaggle -metric hd -model t501,901,903,905,909 -ylim 150)
+# MM2 evaluation
+job_id=$(ssbatch -j "$job_id" -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset mm2 -metric d -model t501,901,903,905,909)
+job_id=$(ssbatch -j "$job_id" -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset mm2 -metric hd -model t501,901,903,905,909 -ylim 170)
+ssbatch -j "$job_id" -s papers/segment7t3t/figures/copy_resulting_figures.py -n MM1A
+
+#
+# Not sure if I can do everything..
+## MM1B creation code
+# 7T evaluation
+job_id1=$(ssbatch -j "$job_id" -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric d -model t502,902,904,906,910)
+job_id1=$(ssbatch -j "$job_id1"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric hd -model t502,902,904,906,910 -ylim 130)
+# Kaggle evaluation
+job_id1=$(ssbatch -j "$job_id1"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset kaggle -metric d -model t502,902,904,906,910)
+job_id1=$(ssbatch -j "$job_id1"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset kaggle -metric hd -model t502,902,904,906,910 -ylim 150)
+
+# MM2 evaluation
+job_id1=$(ssbatch -j "$job_id1"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset mm2 -metric d -model t502,902,904,906,910)
+job_id1=$(ssbatch -j "$job_id1"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset mm2 -metric hd -model t502,902,904,906,910 -ylim 170)
+
+# Copy results to dest folder
+job_id1=$(ssbatch -j "$job_id1"  -s  papers/segment7t3t/figures/copy_resulting_figures.py -n MM1B)
+
+
+# ACDC creation code
+# 7T evaluation -j "$job_id1"
+job_id2=$(ssbatch -j "$job_id1" -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric d -model t511,611,rsynth-model-31-03,613,614)
+job_id2=$(ssbatch -j "$job_id2"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric hd -model t511,611,rsynth-model-31-03,613,614 -ylim 130)
+# Kaggle evaluation
+job_id2=$(ssbatch -j "$job_id2"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset kaggle -metric d -model t511,611,rsynth-model-31-03,613,614)
+job_id2=$(ssbatch -j "$job_id2"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset kaggle -metric hd -model t511,611,rsynth-model-31-03,613,614 -ylim 150)
+# MM2 evaluation
+job_id2=$(ssbatch -j "$job_id2"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset mm2 -metric d -model t511,611,rsynth-model-31-03,613,614)
+job_id2=$(ssbatch -j "$job_id2"  -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset mm2 -metric hd -model t511,611,rsynth-model-31-03,613,614 -ylim 170)
+# Copy results to dest folder
+job_id2=$(ssbatch -j "$job_id2"  -s  papers/segment7t3t/figures/copy_resulting_figures.py -n ACDC)

@@ -1,0 +1,22 @@
+{ "generator_choice": null,
+  "file_ext": "npy",
+  "batch_size": 1,
+  "number_of_examples": null,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": null,
+  "transform_resize": true,
+  "transform_type_target": null,
+  "masked": false,
+  "transform": {},
+  "switch_input_output": false,
+  "input_is_output": false,
+  "output_is_input": false,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": "",
+    "requires_grad": false
+  },
+  "num_workers": 0
+}

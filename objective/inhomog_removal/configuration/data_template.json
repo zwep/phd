@@ -1,0 +1,29 @@
+{ "generator_choice": "inhomogh5",
+  "file_ext": "h5",
+  "batch_perc": 0.02,
+  "batch_size": 16,
+  "number_of_examples": null,
+  "filter_string": null,
+  "alternative_input": null,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_resize": true,
+  "transform_type": "abssumcomplex",
+  "transform_type_target": "real",
+  "transform": {"RandomAffine": {"scales": [0.25, 4],
+                 "degrees": [-10, 10, -10, 10, 0, 0],
+                 "translation": [-50, 50, -50, 50, 0, 0],
+                 "center": "image",
+                 "default_pad_value": 0,
+                 "isotropic": true}},
+  "complex_type": "cartesian",
+  "masked": true,
+  "use_tx_shim": true,
+  "target_type": "rho",
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": ""
+  },
+  "num_workers": 4
+}

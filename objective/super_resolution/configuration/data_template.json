@@ -1,0 +1,19 @@
+{ "generator_choice": "SR",
+  "file_ext": "jpg",
+  "batch_size": 10,
+  "input_shape": [256, 256],
+  "number_of_examples": 20,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": "real",
+  "transform_type_target": "real",
+  "masked": false,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": ""
+  },
+  "num_workers": 0,
+  "n_kernel": 5,
+  "n_scale": 2
+}

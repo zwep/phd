@@ -1,0 +1,24 @@
+{
+  "config_regular": {
+    "network_choice": "unet3d",
+    "indicator_clipweights": false,
+    "clipweights_value": 0.75,
+    "init_type": "orthogonal",
+    "loss": "PerceptualLossStyleLoss",
+    "loss_config": {"run": {}, "obj": {}},
+    "loss_additional": "L1LossRelative",
+    "loss_additional_config": {"run": {"masked": true}, "obj": {}},
+    "lambda_loss_config": {"type": "Constant", "weight": 5, "epoch_on": 0},
+    "lambda_loss_additional_config": {"Type": "HeaviSide", "weight": 3, "epoch_on": 5},
+    "lambda_xcnn_config": {"type": "Constant", "weight": 1, "epoch_on": 0}
+  },
+  "config_unet3d": {"in_chans": 1,
+                   "out_chans": 1,
+                   "chans": 32,
+                   "num_pool_layers": 3,
+                   "drop_prob": 0.3,
+                   "final_activation": "sigmoid",
+                   "track_batchnorm": false,
+                   "normalization": "InstanceNorm3d"
+                }
+}

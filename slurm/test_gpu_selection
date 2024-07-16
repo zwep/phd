@@ -1,0 +1,2 @@
+
+index_gpu, p_gpu = hnvidia.get_free_gpu_id()

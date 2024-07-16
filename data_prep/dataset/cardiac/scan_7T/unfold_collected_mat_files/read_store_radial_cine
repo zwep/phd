@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% This script reads in data from the sense_lab_files and processes those.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+% Read stuff from file...
+addpath 'D:\gyrotools\MRecon-3.0.533 Multix\par'
+addpath 'D:\gyrotools\MRecon-3.0.533 Multix'
+addpath 'D:\Seb'
+
+%% Here we load the file with all the locations of the .lab files we need
+path_to_file = 'F:\data\7T_scan\cardiac\cartesian_files.txt';
+fid = fopen(path_to_file, 'r');
+tline = fgetl(fid);
+all_lines = {};
+while ischar(tline)
+    tline = fgetl(fid);
+    all_lines(end+1) = {tline};
+end
+% Remove the last character
+all_lines = all_lines(1:end-1);
+disp('Done')
+
+target_path = 'F:/data/7T_data/cartesian_cardiac_cine';
+tic
+starting_line = 1;
+starting_line = 2;
+for i_line = starting_line:length(all_lines)
+    fprintf('\nProcessing line number %1.f\n', i_line)
+    % Extract info from list...
+    tline = all_lines(i_line);
+    split = strsplit(char(tline), ',');
+    % Check...
+    % 1) type/location
+    % 2) full dir
+    % 3) location_file_name (....lab)
+    % 4) sense refscan name (....lab)
+    cardiac_location = split(1);
+    data_dir = split(2);
+    radial_file = fullfile(data_dir, split(3));
+
+    % Create storage path
+    target_location_path = fullfile(target_path, cardiac_location)
+    if ~exist(target_location_path, 'dir')
+        mkdir(target_location_path)
+    end
+
+    % Create target file stuff...
+    file_name = radial_file(1:end-4)
+    target_file = char(fullfile(target_location_path, file_name));
+
+    recon_obj = MRecon(radial_file);
+    check_data_typ = any(ismember(recon_obj.Parameter.Parameter2Read.typ, 1));
+    if check_data_typ
+        if isempty(recon_obj.Parameter.Scan.ScanType)
+            fprintf('\t No Recon parameters found\n')
+        else
+            fprintf('\t Recon parameters found')
+            % Now do some actions...
+            recon_obj
+            recon_obj.Perform
+
+            toc
+            reconstructed_data = recon_obj.Data;
+            save(target_file , 'data');
+            disp('Done - saving reconstruction data')
+            toc
+        end
+    else
+        fprintf('No data typ 1 available\n')
+    end
+end
+
+

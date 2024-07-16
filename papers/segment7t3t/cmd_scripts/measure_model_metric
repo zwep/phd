@@ -1,0 +1,15 @@
+#!/bin/bash
+#Here are some command line tasks that were used to create the model metrics
+
+gpusbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset mm1a -model t611
+gpusbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset mm1b -model t611
+gpusbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset mm1a -model trsynth-model-31-03
+gpusbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset mm1b -model trsynth-model-31-03
+
+
+ssbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset mm1a -new True
+ssbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset mm1b -new True
+ssbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset acdc -new True
+ssbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset mm2 -new True
+ssbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset kaggle -new True
+ssbatch -s data_postproc/objective/segment7t3t/measure_model_metric.py -dataset 7t -new True

@@ -1,0 +1,134 @@
+{
+  "config_regular": {
+    "network_choice": "resnet",
+    "indicator_clipweights": false,
+    "clipweights_value": 0.75,
+    "init_type": "orthogonal",
+    "loss": "L1Loss",
+    "loss_config": {"run": {}, "obj": {}},
+    "loss_additional": "",
+    "loss_additional_config": {"run": {"masked": true}, "obj": {}},
+    "lambda_loss_config": {"type": "Constant", "weight": 5, "epoch_on": 0},
+    "lambda_loss_additional_config": {"Type": "HeaviSide", "weight": 3, "epoch_on": 5},
+    "lambda_xcnn_config": {"type": "Constant", "weight": 1, "epoch_on": 0}
+  },
+  "config_gan": {
+    "conditional": false,
+    "generator_choice": "ynet",
+    "generator_init_type": "orthogonal",
+    "discriminator_choice": "pixel",
+    "discriminator_init_type": "orthogonal",
+    "discriminator_loss": "GANLoss",
+    "discriminator_loss_config": {"gan_mode": "lsgan",
+                                  "smoothed_target": true},
+    "generator_loss": "PerceptualLossStyleLoss",
+    "generator_additional_loss": "L1Loss",
+    "generator_additional_loss_config": {},
+    "discriminator_clipweights": true,
+    "discriminator_clipweights_value": 0.1,
+    "smoothed_target": true,
+    "n_discriminator_training": 1,
+    "lambda_generator": 1,
+    "lambda_generator_additional": 1,
+    "lambda_xcnn_generator": 0.1,
+    "lambda_xcnn_discriminator": 0.1,
+    "lr_generator": 0.0001,
+    "lr_discriminator": 0.0001
+  },
+  "config_cyclegan": {
+    "generator_A_choice": "resnet",
+    "generator_B_choice": "resnet",
+    "discriminator_A_choice": "pixel",
+    "discriminator_B_choice": "pixel",
+    "generator_init_type": "orthogonal",
+    "discriminator_init_type": "orthogonal",
+    "GAN_loss": "GANLoss",
+    "GAN_loss_config": {"gan_mode": "lsgan",
+                        "smoothed_target": true},
+    "cycle_loss": "L1Loss",
+    "identity_loss": "L1Loss",
+    "lambda_generator": 1,
+    "lambda_generator_additional": 1,
+    "lr_generator": 0.0001,
+    "lr_discriminator": 0.0001
+  },
+  "config_nlayer": {
+    "input_nc": 1,
+    "n_layers": 6,
+    "ndf": 64,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "conv2d"
+    },
+  "config_resnet": {
+    "input_nc": 1,
+    "output_nc": 1,
+    "n_blocks": 2,
+    "ngf": 4,
+    "drop_prob": 0.1,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "Conv2d",
+    "final_activation": "identity",
+    "block_name": "resblock",
+    "padding_type": "reflect"
+  },
+  "config_coolynet": {
+    "in_chan": 1,
+    "out_chan": 1,
+    "n_blocks": 9,
+    "n_layer": 4,
+    "start_chan": 32,
+    "drop_prob": 0.5,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "Conv2d",
+    "final_activation": "identity",
+    "block_name": "resblock",
+    "padding_type": "reflect",
+    "n_split": 8,
+    "feature_activation": "Relu"
+  },
+  "config_ynet": {
+    "in_chan": 1,
+    "out_chan": 1,
+    "n_blocks": 10,
+    "n_layer": 3,
+    "start_chan": 32,
+    "drop_prob": 0.3,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "Conv2d",
+    "final_activation": "identity",
+    "block_name": "resblock",
+    "padding_type": "reflect",
+    "n_split": 8
+  },
+  "config_pixel": {
+    "input_nc": 1,
+    "normalization_layer": "EvoNorm2D"
+  },
+  "config_deeppixel": {
+    "in_chan": 17,
+    "n_layer": 4,
+    "start_chan": 32,
+    "normalization_layer": "EvoNorm2D",
+    "conv_layer": "Conv2D",
+    "conv_layer_config": {
+                            "kernel_size": 1,
+                            "stride": 1,
+                            "padding": 0
+                          },
+    "activation": "leakyrelu",
+    "activation_config": {
+                            "negative_slope": 0.2
+                          }
+  },
+  "config_unet_model": {
+    "in_chans": 16,
+    "out_chans": 1,
+    "chans": 16,
+    "num_pool_layers": 4,
+    "drop_prob": true
+  },
+  "config_unet": {
+    "n_channels": 1,
+    "n_classes": 1
+  }
+}

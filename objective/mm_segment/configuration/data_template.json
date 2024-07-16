@@ -1,0 +1,20 @@
+{ "generator_choice": "segment",
+  "file_ext": "gz",
+  "batch_size": 10,
+  "number_of_examples": null,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": "real",
+  "transform_type_target": "real",
+  "transform": {"RandomAffine": {"degrees": 0, "translate": [0.5, 0.5]},
+                "RandomHorizontalFlip": {"p": 0.5},
+                "RandomVerticalFlip": {"p": 0.5},
+                "RandomErasing": {"p": 1, "scale": [0.02, 0.10], "ratio": [0.3, 2.1], "value": "random"}},
+  "masked": false,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": ""
+  },
+  "num_workers": 0
+}

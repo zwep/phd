@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gpusbatch -s  data_postproc/objective/segment7t3t/nnunet_run.py -t 610 -f all

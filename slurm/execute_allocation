@@ -1,0 +1,5 @@
+# Dont know where to put this..
+salloc --ntasks=1 --mem=1MB --time=12:00:00 --gres=gpu:0 --partition=bme.gpuresearch.q -w bme-gpuA001
+salloc --ntasks=1 --mem=1MB --time=12:00:00 --gres=gpu:1 --partition=bme.gpuresearch.q
+salloc --ntasks=1 --mem=12000MB --time=120:00:00 --gres=gpu:1 --partition=bme.gpuresearch.q -w bme-gpuA001
+salloc --ntasks=1 --mem=1MB --time=12:00:00 --gres=gpu:1 --partition=bme.gpuresearch.q -w bme-gpuB001

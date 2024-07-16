@@ -1,0 +1,27 @@
+{ "generator_choice": "undersampled",
+  "file_ext": "h5",
+  "batch_perc": 0.02,
+  "batch_size": 4,
+  "number_of_examples": null,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": "abs",
+  "p_undersample": 10,
+  "transform_resize": true,
+  "transform_type_target": "abs",
+   "transform": {"RandomAffine": {"scales": [0.25, 4],
+                 "degrees": [-10, 10, -10, 10, 0, 0],
+                 "translation": [-50, 50, -50, 50, 0, 0],
+                 "center": "image",
+                 "default_pad_value": 0,
+                 "isotropic": true}},
+  "complex_type": "cartesian",
+  "masked": true,
+  "input_shape": [1, 256, 256],
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": "/data/seb/model_run/undersampled_recon_allsources_june/config_00/config_param.json"
+  },
+  "num_workers": 0
+}

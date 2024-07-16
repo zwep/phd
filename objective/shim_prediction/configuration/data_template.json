@@ -1,0 +1,16 @@
+{ "generator_choice": "shimpred",
+  "file_ext": "npy",
+  "batch_size": 15,
+  "number_of_examples": null,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": "real",
+  "transform_type_target": "real",
+  "masked": false,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": ""
+  },
+  "num_workers": 0
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Follow the red dot</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Canvas Sine Wave</h1>
+  <div class="parameter-container">
+    <div class="parameter-label">Period [px]:</div>
+    <div class="parameter-value" id="frequency-value">1000</div>
+    <button onclick="changeValue(-100, 'frequency-value')">-</button>
+    <button onclick="changeValue(100, 'frequency-value')">+</button>
+    <div class="parameter-label">Speed [s]:</div>
+    <div class="parameter-value" id="period-value">3</div>
+    <button onclick="changeValue(-0.5, 'period-value')">-</button>
+    <button onclick="changeValue(0.5, 'period-value')">+</button>
+  </div>
+  <canvas id="c"></canvas>
+  <script src="breathing.js"></script>
+</body>
+</html>

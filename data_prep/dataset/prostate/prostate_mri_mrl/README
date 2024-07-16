@@ -1,0 +1,8 @@
+
+Here we prepare the dataset from Astrid v Lier
+
+We got MRI and MRL data in dicom format with no order given
+
+Here we find the order and create a single .h5 file per date
+
+Also, we create masks. Great masks.

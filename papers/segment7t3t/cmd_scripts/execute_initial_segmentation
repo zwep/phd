@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ssbatch -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric d -model t501,502,511,513,514
+ssbatch -s  data_postproc/objective/segment7t3t/visualize_model_metric.py -dataset 7T -metric hd -model t501,502,511,513,514 -ylim 200

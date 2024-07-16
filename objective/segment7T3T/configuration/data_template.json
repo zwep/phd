@@ -1,0 +1,29 @@
+{ "generator_choice": "cardiac_segment",
+  "file_ext": "npy",
+  "batch_size": 10,
+  "number_of_examples": null,
+  "optional_target_appendix": "",
+  "optional_input_appendix": "",
+  "transform_type": "abs",
+  "transform_resize": true,
+  "transform_type_target": null,
+  "target_type": "segmentation",
+  "masked": false,
+  "transform": {"RandomAffine": {"degrees": [-10, 10], "translate": [0.5, 0.5]},
+                                                 "RandomHorizontalFlip": {"p": 0.2},
+                                                 "RandomVerticalFlip": {"p": 0.2},
+                                                 "RandomErasing": {"p": 0.5, "scale": [0.02, 0.10], "ratio": [0.3, 2.1],
+                                                                   "value": "random"},
+                                               "GaussianBlur": {"kernel_size": 15, "sigma" : [0.1, 2.0]},
+                                               "RandomPerspective": {"p": 0.5, "distortion_scale": 0.2}},
+  "switch_input_output": false,
+  "input_is_output": false,
+  "output_is_input": false,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": "",
+    "requires_grad": false
+  },
+  "num_workers": 0
+}

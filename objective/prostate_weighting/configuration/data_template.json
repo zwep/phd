@@ -1,0 +1,27 @@
+{ "batch_perc": 0.02,
+  "batch_size": 10,
+  "number_of_examples": null,
+  "transform_type": "real",
+  "transform_type_target": null,
+  "complex_type": "cartesian",
+  "transform_resize": true,
+  "transform": {"RandomAffine": {"degrees": [-10, 10], "translate": [0.5, 0.5]},
+                                                 "RandomHorizontalFlip": {"p": 0.2},
+                                                 "RandomVerticalFlip": {"p": 0.2},
+                                                 "RandomErasing": {"p": 0.5, "scale": [0.02, 0.10], "ratio": [0.3, 2.1],
+                                                                   "value": "random"},
+                                               "GaussianBlur": {"kernel_size": 15, "sigma" : [0.1, 2.0]},
+                                               "RandomPerspective": {"p": 0.5, "distortion_scale": 0.2}},
+  "alternative_input": "",
+  "generator_choice": "prostateweighting",
+  "optional_target_appendix": "_corrected",
+  "optional_input_appendix": "",
+  "file_ext": "h5",
+  "switch_input_output": true,
+  "num_workers": 0,
+  "trained_model_config":
+  {
+    "status": false,
+    "model_path": "/local_scratch/sharreve/model_run/selected_inhomog_removal_models/single_biasfield/config_00"
+  }
+}

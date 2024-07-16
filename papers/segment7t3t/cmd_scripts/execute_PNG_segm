@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# For example, with this we can execute the PNG prediction of model task 502
+gpusbatch -s  data_postproc/objective/segment7t3t/model_results_to_PNG.py -dataset MM2 -model t501,901,903,905
+gpusbatch -s  data_postproc/objective/segment7t3t/model_results_to_PNG.py -dataset 7T -model t502,902,904,906,910
+gpusbatch -s  data_postproc/objective/segment7t3t/model_results_to_PNG.py -dataset kaggle -model t511,611,610,613,614

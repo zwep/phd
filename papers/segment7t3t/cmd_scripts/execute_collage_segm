@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ssbatch -s data_postproc/objective/segment7t3t/PNG_to_collage_model_PNG.py -dataset 7T -model t502,902,904,906,910 -n 10
+ssbatch -s data_postproc/objective/segment7t3t/PNG_to_collage_model_PNG.py -dataset MM2 -model t501,901,903,905 -n 10
+ssbatch -s data_postproc/objective/segment7t3t/PNG_to_collage_model_PNG.py -dataset Kaggle -model t511,611,610,613,614 -n 10

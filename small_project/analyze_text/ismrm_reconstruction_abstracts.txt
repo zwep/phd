@@ -1,0 +1,59 @@
+View	3585	Untrained Modified Deep Decoder for Joint Denoising and Parallel Imaging Reconstruction	Sukrit Arora, Volkert Roeloffs, Michael Lustig
+View	3586	Deep Dixon: Deep learning-based chemical-shift corrected water-fat separation with only simulated training data	Frank Zijlstra, Peter Seevinck
+View	3587	Joint Optimization of Sampling Patterns and Deep Priors for Improved Parallel MRI	Hemant Kumar Aggarwal, Mathews Jacob
+View	3588	Real-Time Cardiac Cine MRI with Residual Convolutional Recurrent Neural Network	Eric Chen, Xiao Chen, Jingyuan Lv, Yuan Zheng, Terrence Chen, Jian Xu, Shanhui Sun
+View	3589	Single-shot T2 mapping improvement through Multi-train Multiple Overlapping-Echo Detachment planar imaging sequence	Xiaoyin Wang, Qizhi Yang, Hongjian He, Congbo Cai, Yi-Cheng Hsu, Jianhui Zhong
+View	3590	Model-Free Deep MRI Reconstruction: A Robustness Study	Gopal Nataraj, Ricardo Otazo
+View	3591	Hybrid Deep Neural Network Architectures for Multi-Coil MR Image Reconstruction	Salman Ul Hassan Dar, Mahmut Yurt, Muzaffer Özbey, Tolga Çukur
+View	3592	A Further Analysis of Deep Instability in Image Reconstruction	Yue Guan, Yudu Li, Yao Li, Yiping Du, Zhi-Pei Liang
+View	3593	A direct MR image reconstruction from k-space via End-To-End reconstruction network using recurrent neural network (ETER-net)	Changheun Oh, yeji han, HyunWook Park
+View	3594	A deep network for reconstruction of undersampled fast-spin-echo MR images with suppressed fine-line artifact	Sangtae Ahn, Anne Menini, Christopher Hardy
+View	3595	Exploiting Coarse-Scale Image Features for Transfer Learning in Accelerated Magnetic Resonance Imaging	Ukash Nakarmi, Joseph Cheng, Edgar Rios, Morteza Mardani, John Pauly, Shreyas Vasanawala
+View	3596	Deep-learning based motion correction for brain conductivity reconstruction	Jan Hendrik Wuelbern, Ulrich Katscher, Karsten Sommer, Axel Saalbach, Jalal Andre
+View	3597	Calgary-Campinas raw k-space dataset: a benchmark for brain magnetic resonance image reconstruction	Roberto Souza, M Lauzon, Marina Salluzzi, Letícia Rittner, Richard Frayne
+View	3598	Attention Based Scale Recurrent Network for Under-Sampled MRI Reconstruction	Gabriel della Maggiora, Alberto Di Biase, Carlos Castillo-Passi, Pablo Irarrazaval
+View	3599	Uncertainty Quantification for Deep MRI	Vineet Edupuganti, Morteza Mardani, Joseph Cheng, Shreyas Vasanawala, John Pauly
+View	3600	Deep learning-based referenceless distortion correction for single-shot non-Cartesian spatiotemporally encoded MRI	Wei Wang, Jian Wu, Qinqin Yang, Jian Han, Congbo Cai, Shuhui Cai, Zhong Chen
+View	3601	Rapid Region-of-Interest MRI Reconstruction Using Context-Aware Non-Local U-Net	Xinwen Liu, Jing Wang, Fangfang Tang, Hongfu Sun, Feng Liu, Stuart Crozier
+View	3602	Multi-contrast MR imaging with enhanced denoising autoencoder prior network learning	Xiangshun Liu, Minghui Zhang, Qiegen Liu, Leslie Ying, Xin Liu, Hairong Zheng, Shanshan Wang
+View	3603	ODE-based Deep Network for MRI Reconstruction	Ali Pour Yazdanpanah, Onur Afacan, Simon Warfield
+View	3604	Quantitative characterization of image reconstruction training dataset complexity with Rademacher Complexity measures	Bo Zhu, Neha Koonjoo, Bragi Sveinsson, Matthew Rosen
+View	3605	Unsupervised Reconstruction of Continuous Dynamic Radial Acquisitions via CNN-NUFFT Self-Consistency	Matthew Muckley*, Tullie Murrell*, Suvrat Booshan, Hersh Chandarana, Florian Knoll, Daniel Sodickson
+View	3606	ISTA-nets: enhancing the performance of the unrolled deep networks for fast MR imaging	Jing Cheng, Yiling Liu, Qiegen Liu, Ziwen Ke, Haifeng Wang, Yanjie Zhu, Leslie Ying, Xin Liu, Hairong Zheng, Dong Liang
+View	3607	A Parameter-free Plug-and-Play Method for Accelerated MRI Reconstruction	Sizhuo Liu, Ning Jin, Philip Schniter, Rizwan Ahmad
+View	3608	Efficient Phase-varied Image Reconstruction using Single Deep Convolutional Neural Network without Estimation of Phase Distribution.	Shohei OUCHI, Satoshi ITO
+View	3609	Deep Learning to Produce Realistic MR Images through Fréchet Inception Distance Monitoring	Sunghun Seo, Seung Hong Choi, Sung-Hong Park
+View	3610	Calibrationless SENSE Reconstruction with Deep Coil Sensitivity Learning	Chengyan Wang, Yan Li, Jun Lv, Bo Li, Fei Dai, Weibo Chen, He Wang
+View	3611	Parallel Imaging with a Combination of SENSE and Generative Adversarial Networks (GAN)	Jun Lyu, Peng Wang, Chengyan Wang
+View	3612	An Information Theoretical Framework for Machine Learning Based MR Image Reconstruction	Yudu Li, Yue Guan, Ziyu Meng, Fanyang Yu, Rong Guo, Yibo Zhao, Tianyao Wang, Yao Li, Zhi-Pei Liang
+View	3613	Super-resolution MRI using deep convolutional neural network for adaptive MR-guided radiotherapy: a pilot study	Yihang Zhou, Hongyu Li, Jing Yuan, Leslie Ying, Kin Yin Cheung, Siu Ki Yu
+View	3614	Model-augmented deep learning for VFA-T1 mapping	Lea Bogensperger, Oliver Maier, Rudolf Stollberger
+View	3615	Relax-ADMM-Net: A Relaxed ADMM Network for Compressed Sensing MRI	Yiling Liu, Jing Cheng, Yanjie Zhu, Haifeng Wang, Ziwen Ke, Qiegen Liu, Xin Liu, Hairong Zheng, Leslie Ying, Dong Liang
+View	3616	Deep Network Interpolation for Accelerated Parallel MR Image Reconstruction	Chen Qin, Jo Schlemper, Kerstin Hammernik, Jinming Duan, Ronald Summers, Daniel Rueckert
+View	3617	Unsupervised Deep Learning Reconstruction Using the MR Imaging Model	Peizhou Huang, Chaoyi Zhang, Hongyu Li, Sunil Gaire, Ruiying Liu, Xiaoliang Zhang, Xiaojuan Li, Liang Dong, Leslie Ying
+View	3618	Multi-objective Deep Learning for Joint Estimation and Detection Tasks in MRI	Zhiyang Fu, Maria Altbach, Diego Martin, Ali Bilgin
+View	3619	Deep Simultaneous Optimization of Sampling and Reconstruction for Multi-contrast MRI	Xinwen Liu, Jing Wang, Fangfang Tang, Shekhar Chandra, Feng Liu, Stuart Crozier
+View	3620	A Hybrid SENSE Reconstruction Combined with Deep Convolution Neural Network	Hangfei Liu, Jingjing Li, Qing Tang, Tao Zhang
+View	3621	Reconstructing non-Cartesian acquisitions using dAUTOMAP	Maarten Terpstra, Federico d'Agata, Bjorn Stemkens, Jan Lagendijk, Cornelis van den Berg, Rob Tijssen
+View	3622	End-to-End Deep Learning Reconstruction for Ultra-Short MRF	Mingdong Fan, Brendan Eck, Nicole Seiberlich, Michael Martens, Robert Brown
+View	3623	k-t CNN for Modeling Spatio-temporal Mappings and an Application to Reconstruction of k-space Data with Stack-of-spirals Trajectory	Hidenori Takeshima, Hideaki Kutsuna
+View	3624	Deep Learning-Based Adaptive Noise Reduction for Improving Image Quality of 1.5T MR Images	Shigeru Kiryu, Yasutaka Sugano, Tomoyuki Ohta, Kuni Ohtomo
+View	3625	Simultaneous Brain Anatomical and Arterial Imaging by 3T MRI: Reconstruction Based on a Generative Adversarial Network	Wei Yu, Lixin Wang, Xianchang Zhang, Zhentao Zuo, Rong Xue, Tianyi Qian
+View	3626	A Recurrent Neural Network (RNN) based reconstruction of extremely undersampled neuro-interventional MRI	Ruiyang Zhao, Tao Wang, Kang Yan, Chengcheng Zhang, Zhipei Liang, Yiping Du, Dianyou Li, Bomin Sun, Yuan Feng
+View	3627	Partial Fourier MRI Reconstruction Using Convolutional Neural Networks	Peibei Cao, Linfang Xiao, Yilong Liu, Yujiao Zhao, Yanqiu Feng, Alex T Leong, Ed X Wu
+View	3628	Derivation of quantitative T1 map from a single MR image using a self-attention deep neural network	Yan Wu, Yajun Ma, Jiang Du, Lei Xing
+View	3629	Impact of machine learning in iterative motion corrected reconstructions	Rita Nunes, Santiago Sanz-Estébanez, Joseph Hajnal, Lucilio Cordero-Grande, Carlos Alberola-López
+View	3630	Assessment of the Generalization of Learned Unsupervised Deep Learning Method	Ziwen Ke, Yanjie Zhu, Jing Cheng, Leslie Ying, Xin Liu, Hairong Zheng, Dong Liang
+View	3631	Deep-learning reconstruction for 3D Delayed Myocardial Enhancement	Gaspar Delso, Suryanarayanan Kaushik, Graeme McKinnon, Daniel Lorenzatti, Julián Vega, Teresa Caralt, Adelina Doltra, José Ortiz-Pérez, Rosario Perea, Susanna Prat, Marta Sitges, Martin Janich
+View	3632	Deep learning for undersampled spiral DENSE reconstruction	Samuel Fielden, Eric Carruth, Christopher Nevius, Christopher Haggerty, Brandon Fornwalt
+View	3633	Suppression of Artifact-Generating Echoes in Cine DENSE using Deep Learning	Mohammad Abdishektaei, Xue Feng, Craig Meyer, Frederick Epstein
+View	3634	Learning reconstruction without ground-truth data: an unsupervised way for fast MR imaging	Jing Cheng, Ziwen Ke, Haifeng Wang, Yanjie Zhu, Leslie Ying, Xin Liu, Hairong Zheng, Dong Liang
+View	3635	Learning-based Optimization of the Under-sampling PattErn with Straight-Through Estimator (LOUPE-ST) for Fast MRI	Jinwei Zhang, Hang Zhang, Cagla Bahadir, Alan Wang, Mert Sabuncu, Pascal Spincemaille, Thanh Nguyen, Yi Wang
+View	3636	Locally and Globally Concatenated Network for MR Image Reconstruction	Zechen Zhou, Christophe Schülke, Chun Yuan, Peter Börnert
+View	3637	Image Reconstruction Using Generative Adversarial Networks with MR-Specific Feature Map	Ruiying Liu, Hongyu Li, Dong Liang, Xiaojuan Li, Chaoyi Zhang, Peizhou Zhou, Leslie Ying, Xiaoliang Zhang
+View	3638	A deep-learning based synthesized T2 weighted imaging with multi-modality information and k-space correction	Qing Tang, Ye Li, Hangfei Liu, Tao Zhang
+View	3639	Quantitative and Volumetric Assessment of a Deep Cascade Network for MR Reconstruction Under Different Acceleration Factors	Wallace Loos, Roberto Souza, Mariana Bento, Robert Lebel, Richard Frayne
+View	3640	Deep Residual Grappa (DeepGrappa): A General Purpose Self-calibrated AI based MR Reconstruction	Hui Xue, James Moon, Peter Kellman
+View	3641	Are deep learning MR reconstruction models robust against adversarial attacks?	Taohui Xiao, Cheng Li, Haoyun Liang, Hairong Zheng, Shanshan Wang
+View	3642	Plug-and-Play Deep Learning Module for Faster Parallel MR Imaging	Kamlesh Pawar, Gary Egan, Zhaolin Chen
+View	3643	Brain MR image super-resolution using regularized deep image prior	Yue Hu, Peng Li, Dong Nan

@@ -1,0 +1,17 @@
+{"input_is_output": false,
+ "batch_size": 8,
+  "file_ext": "h5",
+ "number_of_examples": null,
+ "transform_type": "complex",
+ "transform_type_target": "complex",
+ "transform_resize": true,
+ "complex_type": "cartesian",
+ "generator_choice": "b2b",
+ "masked": true,
+  "multiply_rho": true,
+ "num_workers": 0,
+ "trained_model_config": {
+                            "status": false,
+                            "model_path": "/data/seb/model_run/rx2tx_20200924/config_00"
+                            }
+}
